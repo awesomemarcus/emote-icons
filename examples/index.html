@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" dochead="1">
   <title>emote-icons</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../dist/emote-icons.min.css">
+  <link rel="stylesheet" href="../dist/emote-icons-sm.min.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="../dist/emote-icons.min.js"></script>
 </head>
@@ -19,11 +19,11 @@
       <br />
       <br />
       <br />
-      <form class="form-horizontal">
+      <form class="form-horizontal" id="myForm">
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Text</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            <input type="text" class="form-control" placeholder="Input text here" id="myInput">
           </div>
         </div>
         <div class="form-group">
@@ -38,7 +38,7 @@
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10 text-right">
-            <button type="submit" class="btn btn-success">Convert</button>
+            <button type="submit" id="convert" class="btn btn-success">Convert</button>
           </div>
         </div>
       </form>
@@ -47,7 +47,17 @@
   </div>
   <script>
   $(document).ready(function() {
+    $("#convert").on("click", function(e) {
+      e.preventDefault();
+      var inputVal = $('#myInput').val();
+      $('.panel-body').html(emotes.parse(inputVal));
+    });
 
+    $("#myForm").on("submit", function(e) {
+      e.preventDefault();
+      var inputVal = $('#myInput').val();
+      $('.panel-body').html(emotes.parse(inputVal));
+    });
   })
   </script>
 </body>

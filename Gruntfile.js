@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         dest: 'dist/emote-icons.js',
         options: {
           browserifyOptions: {
-            standalone: 'cheers'
+            standalone: 'emotes'
           }
         }
       }

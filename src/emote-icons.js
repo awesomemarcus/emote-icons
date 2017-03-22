@@ -5,7 +5,7 @@ Object.defineProperty(exports, '__esModule', {
 });
 
 var emotes = (function () {
-  emoticons = {
+  var emoticons = {
     ':aha': 'sprite sprite-aha',
     ':angel': 'sprite sprite-angel',
     ':angry': 'sprite sprite-angry',
@@ -79,19 +79,31 @@ var emotes = (function () {
   }
 
   function parse(string) {
-    console.log(string);
+    var parts = string.split(' ');
+    var newString = '';
+
+    for (var i = 0; i < parts.length; i++) {
+      var newPart = parts[i];
+
+      if (emoticons[parts[i]]) {
+        newPart = emoticons[newPart];
+        parts[i] = '<span class="' + newPart + '"></span>';
+      }
+    }
+    newString = parts.join(' ');
+    return newString;
   }
 
   function list() {
     console.log('listing');
   }
 
-  var emoticons = {
+  var emoteFunc = {
     parse: parse,
     list: list
   };
 
-  return emoticons;
+  return emoteFunc;
 }());
 
 module.exports = emotes;
