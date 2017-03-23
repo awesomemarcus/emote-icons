@@ -109,7 +109,7 @@ var emotes = (function () {
       }
     }
     newString = parts.join(' ');
-    console.log(newString);
+    // console.log(newString);
     return newString;
   }
 
