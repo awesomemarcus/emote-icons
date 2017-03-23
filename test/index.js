@@ -15,7 +15,7 @@ function check( done, f ) {
   }
 };
 
-describe("cheers-alert notification", function() {
+describe("emote-icons emoticons", function() {
   beforeEach(function() {
      global.$ = $;
   });
@@ -23,9 +23,23 @@ describe("cheers-alert notification", function() {
     $('body').empty();
   });
 
-  // it("should check if alert-container exist", function() {
-  //   expect($('.alert-container').length).to.equal(0);
-  // });
+  it("should check text", function() {
+    var output = emotes('hi');
+
+    expect(output).to.equal('hi');
+  });
+
+  it("should parse if emoticons match", function() {
+    var output = emotes(':)');
+
+    expect(output).to.equal('<span class="sprite sprite-smile"></span>');
+  });
+
+  it("should check both", function() {
+    var output = emotes('hello :)');
+
+    expect(output).to.equal('hello <span class="sprite sprite-smile"></span>');
+  });
   //
   // it("create alert-container if none exist", function() {
   //   cheers.success({
