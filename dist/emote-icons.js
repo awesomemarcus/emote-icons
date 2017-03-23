@@ -10,11 +10,13 @@ var emotes = (function () {
     ':aha': 'sprite sprite-aha',
     ':angel': 'sprite sprite-angel',
     'O:)': 'sprite sprite-angel',
+    '0:)': 'sprite sprite-angel',
     ':angry': 'sprite sprite-angry',
     ':balloon': 'sprite sprite-balloon',
     ':bomb': 'sprite sprite-bomb',
     ':boo': 'sprite sprite-boo',
     ':broken': 'sprite sprite-broken',
+    '</3': 'sprite sprite-broken',
     ':bye': 'sprite sprite-bye',
     ':cake': 'sprite sprite-cake',
     ':cat': 'sprite sprite-cat',
@@ -24,7 +26,9 @@ var emotes = (function () {
     ':confused': 'sprite sprite-confused',
     ':cool': 'sprite sprite-cool',
     ':cry': 'sprite sprite-cry',
+    ":'(": 'sprite sprite-cry',
     ':cry2': 'sprite sprite-cry2',
+    ":''(": 'sprite sprite-cry2',
     ':dead': 'sprite sprite-dead',
     ':devil': 'sprite sprite-devil',
     '3:)': 'sprite sprite-devil',
@@ -41,13 +45,14 @@ var emotes = (function () {
     ':hug': 'sprite sprite-hug',
     ':kiss': 'sprite sprite-kiss',
     ':*': 'sprite sprite-kiss',
-    ':lol': 'sprite sprite-lol',
+    'XD': 'sprite sprite-lol',
     ':loser': 'sprite sprite-loser',
     ':love': 'sprite sprite-love',
     ':**': 'sprite sprite-love',
     ':mail': 'sprite sprite-mail',
     ':mute': 'sprite sprite-mute',
     ':nerd': 'sprite sprite-nerd',
+    '8)': 'sprite sprite-nerd',
     ':night': 'sprite sprite-night',
     ':ninja': 'sprite sprite-ninja',
     ':party': 'sprite sprite-party',
@@ -73,6 +78,7 @@ var emotes = (function () {
     ':)': 'sprite sprite-smile',
     ':smoke': 'sprite sprite-smoke',
     ':smug': 'sprite sprite-smug',
+    'B)': 'sprite sprite-smug',
     ':sshh': 'sprite sprite-sshh',
     ':star': 'sprite sprite-star',
     ':sweat': 'sprite sprite-sweat',
@@ -103,6 +109,7 @@ var emotes = (function () {
       }
     }
     newString = parts.join(' ');
+    console.log(newString);
     return newString;
   }
 
