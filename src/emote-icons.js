@@ -95,7 +95,7 @@ var emotes = (function () {
     ':zombie': 'sprite sprite-zombie'
   }
 
-  function parse(string) {
+  function parseHTML(string) {
     var parts = string.split(' ');
     var newString = '';
 
@@ -112,16 +112,7 @@ var emotes = (function () {
     return newString;
   }
 
-  function list() {
-    console.log('listing');
-  }
-
-  var emoteFunc = {
-    parse: parse,
-    list: list
-  };
-
-  return emoteFunc;
+  return parseHTML;
 }());
 
 module.exports = emotes;

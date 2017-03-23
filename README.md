@@ -1,2 +1,2 @@
 # emote-icons
-parse text and converts them to emoticons
+scans and replace string that match a emoticon

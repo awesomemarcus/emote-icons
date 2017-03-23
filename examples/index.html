@@ -15,7 +15,7 @@
     <br />
     <div class="jumbotron">
       <h1>emote-icons</h1>
-      <p>parse text and converts them to emoticons</p>
+      <p>scans and replace string that match a emoticon</p>
       <br />
       <br />
       <br />
@@ -50,13 +50,13 @@
     $("#convert").on("click", function(e) {
       e.preventDefault();
       var inputVal = $('#myInput').val();
-      $('.panel-body').html(emotes.parse(inputVal));
+      $('.panel-body').html(emotes(inputVal));
     });
 
     $("#myForm").on("submit", function(e) {
       e.preventDefault();
       var inputVal = $('#myInput').val();
-      $('.panel-body').html(emotes.parse(inputVal));
+      $('.panel-body').html(emotes(inputVal));
     });
   })
   </script>
