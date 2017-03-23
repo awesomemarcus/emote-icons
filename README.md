@@ -20,6 +20,7 @@ import emotes from 'emote-icons';
 import 'emote-icons/src/emote-icons.css'; //load style
 ```
 for smaller emoticons import "emote-icons-sm.css" instead.
+
 #### HTML
 ```html
 <html>
@@ -39,6 +40,7 @@ for smaller emoticons import "emote-icons-sm.css" instead.
     </body>
 </html>
 ```
+
 #### React
 ```js
 import React from 'react';
