@@ -2,7 +2,7 @@
 scans and replace string that match a emoticon
 
 [![Build Status](https://travis-ci.org/maddumajohnerick/emote-icons.svg?branch=master)](https://travis-ci.org/maddumajohnerick/emote-icons)
-[![Coverage Status](https://coveralls.io/repos/github/maddumajohnerick/cheers-alert/badge.svg?branch=master)](https://coveralls.io/github/maddumajohnerick/cheers-alert?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/maddumajohnerick/emote-icons/badge.svg?branch=master)](https://coveralls.io/github/maddumajohnerick/emote-icons?branch=master)
 [![Code Climate](https://codeclimate.com/github/maddumajohnerick/emote-icons/badges/gpa.svg)](https://codeclimate.com/github/maddumajohnerick/emote-icons)
 
 [Demo Page](https://maddumajohnerick.github.io/emote-icons/examples/)
