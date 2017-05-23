@@ -1,5 +1,5 @@
 # emote-icons
-scans and replace string that match a emoticon
+scans and replace string that match an emoticon
 
 [![Build Status](https://travis-ci.org/maddumajohnerick/emote-icons.svg?branch=master)](https://travis-ci.org/maddumajohnerick/emote-icons)
 [![Coverage Status](https://coveralls.io/repos/github/maddumajohnerick/emote-icons/badge.svg?branch=master)](https://coveralls.io/github/maddumajohnerick/emote-icons?branch=master)
